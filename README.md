@@ -52,14 +52,14 @@ Setelah prasyarat selesai, ikuti langkah-langkah berikut:
    cd C:\bigdata-hive-mysql
    ```
 
-8. **Salin file `hive-3.4.1.tar.gz` ke folder ini**  
+8. **Salin file `hadoop-3.4.1.tar.gz` ke folder ini**  
    File ini *tidak* diunduh otomatis oleh Dockerfile.  
-   - Unduh dari: [https://downloads.apache.org/hive/hive-3.4.1/apache-hive-3.4.1-bin.tar.gz](https://downloads.apache.org/hive/hive-3.4.1/apache-hive-3.4.1-bin.tar.gz)  
-   - Pindahkan ke folder `bigdata-hive-mysql`.
+   - Unduh dari: [https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz](https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz)  
+   - Pindahkan ke folder `bigdata-hadoop`
 
    > 💡 **Catatan:** Jika ingin Docker otomatis mengunduh file, bisa tambahkan perintah `curl` ke dalam `Dockerfile` seperti:
    ```Dockerfile
-   RUN curl -O https://downloads.apache.org/hive/hive-3.4.1/apache-hive-3.4.1-bin.tar.gz
+   RUN curl -O https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz
    ```
 
 9. **Salin file `hive-4.0.1-bin.tar.gz` dan `tez-0.10.4-bin.tar.gz` ke folder ini**  
