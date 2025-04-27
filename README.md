@@ -55,7 +55,7 @@ Setelah prasyarat selesai, ikuti langkah-langkah berikut:
 8. **Salin file `hadoop-3.4.1.tar.gz` ke folder ini**  
    File ini *tidak* diunduh otomatis oleh Dockerfile.  
    - Unduh dari: [https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz](https://downloads.apache.org/hadoop/common/hadoop-3.4.1/hadoop-3.4.1.tar.gz)  
-   - Pindahkan ke folder `bigdata-hadoop`
+   - Pindahkan ke folder `bigdata-hive-mysql`
 
    > 💡 **Catatan:** Jika ingin Docker otomatis mengunduh file, bisa tambahkan perintah `curl` ke dalam `Dockerfile` seperti:
    ```Dockerfile
