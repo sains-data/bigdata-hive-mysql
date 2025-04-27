@@ -1,6 +1,6 @@
 # Big Data Hive - Single Node Cluster with Docker
 
-Proyek ini membuat sebuah *single-node Hive cluster* menggunakan Docker dengan integrasi MySQL untuk penyimpanan data Hive Metastore. Anda dapat melakukan percobaan atau pembelajaran Big Data lokal di Windows.
+Praktikum ini membuat sebuah *single-node Hive cluster* menggunakan Docker dengan integrasi MySQL untuk penyimpanan data Hive Metastore. Anda dapat melakukan percobaan atau pembelajaran Big Data lokal di Windows.
 
 ## Prasyarat
 
