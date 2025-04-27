@@ -22,7 +22,7 @@
     <!-- for server side -->
     <property>
         <name>hive.metastore.uris</name>
-        <value>thrift://localhost:10000</value>
+        <value>thrift://0.0.0.0:10000</value>
     </property>
 
     <property>
@@ -50,7 +50,6 @@
         <name>hive.txn.manager</name>
         <value>org.apache.hadoop.hive.ql.lockmgr.DbTxnManager</value>
     </property>
-
 
     <!-- Hive server 2 -->
     <property>
@@ -89,5 +88,21 @@
 		<name>hive.stats.autogather</name>
 		<value>false</value>
 	</property>
+
+    <property>
+        <name>datanucleus.autoCreateSchema</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>datanucleus.fixedDatastore</name>
+        <value>true</value>
+    </property>
+
+    <property>
+        <name>datanucleus.autoCreateTables</name>
+        <value>True</value>
+    </property>
+
 
 </configuration>

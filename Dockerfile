@@ -25,6 +25,7 @@ RUN apt -y install wget tar sudo rsync
 RUN sudo apt-get update
 RUN sudo apt-get -y install apache2
 RUN sudo apt-get -y install tree
+RUN sudo apt-get install net-tools
 
 # Setup sock proxy
 RUN apt-get install -y  openssh-server
@@ -48,8 +49,14 @@ COPY apache-hive-4.0.1-bin.tar.gz /apache-hive-4.0.1-bin.tar.gz
 RUN tar -xvzf /apache-hive-4.0.1-bin.tar.gz -C /
 RUN ln -sf /apache-hive-4.0.1-bin /hive
 
-RUN apt-get -y install mysql-server mysql-client
+# Langkah 7: Install MySQL dan client
+RUN apt-get update && apt-get -y install mysql-server mysql-client
+
+# Download MySQL Connector untuk Java
 RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar
+
+# Salin MySQL Connector ke direktori Hive
+COPY mysql-connector-java-8.0.28.jar /hive/lib/
 
 RUN  apt-get -y clean all && rm -rf /tmp/* /var/tmp/* 
 
