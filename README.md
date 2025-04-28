@@ -66,7 +66,7 @@ Setelah prasyarat selesai, ikuti langkah-langkah berikut:
    File-file ini *tidak* diunduh otomatis oleh Dockerfile.  
    - Unduh dari:
      - [Apache Hive 4.0.1](https://downloads.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz)  
-     - [Apache Tez 0.10.4](https://downloads.apache.org/tez/tez-0.10.4/apache-tez-0.10.4-bin.tar.gz)
+     - [Apache Tez 0.10.4](https://dlcdn.apache.org/tez/0.10.4/apache-tez-0.10.4-bin.tar.gz)
 
    - Pindahkan file-file tersebut ke folder `bigdata-hive-mysql`.
 
