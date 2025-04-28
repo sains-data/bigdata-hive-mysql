@@ -52,9 +52,6 @@ RUN ln -sf /apache-hive-4.0.1-bin /hive
 # Langkah 7: Install MySQL dan client
 RUN apt-get update && apt-get -y install mysql-server mysql-client
 
-# Download MySQL Connector untuk Java
-RUN wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.28/mysql-connector-java-8.0.28.jar
-
 # Salin MySQL Connector ke direktori Hive
 COPY mysql-connector-java-8.0.28.jar /hive/lib/
 
